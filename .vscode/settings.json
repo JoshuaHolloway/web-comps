@@ -1,0 +1,18 @@
+{
+  "files.exclude": {
+    "**/*.css": true,
+    "**/*.css.map": true,
+    // ".gitignore": true,
+    "README.md": true
+  },
+  "liveSassCompile.settings.formats": [ // override global settings.json
+    {
+      "format": "compressed",
+      "extensionName": ".css",
+      // "savePath": "/css",
+      "savePath": "~/",
+      "savePathReplacementPairs": null
+    }
+  ],
+  "liveServer.settings.port": 5502
+}

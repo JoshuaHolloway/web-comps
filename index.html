@@ -1,0 +1,15 @@
+<html>
+<head>
+  <script src="./web-comp.js" type="module"></script>
+</head>
+<body>
+
+  <web-comp l="150" c="blue"></web-comp>
+  <script type="module">
+    const elem = document.querySelector('web-comp');
+    elem.addEventListener('event-1', (e) => console.log(`e.detail.name: ${e.detail.name}`));
+    elem.addEventListener('event-2', (e) => console.log(`e.detail.name: ${e.detail.name}`));
+  </script>
+
+</body>
+</html>
