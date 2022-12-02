@@ -9,7 +9,6 @@
     {
       "format": "compressed",
       "extensionName": ".css",
-      // "savePath": "/css",
       "savePath": "~/",
       "savePathReplacementPairs": null
     }
