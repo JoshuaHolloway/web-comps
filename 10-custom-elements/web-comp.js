@@ -20,9 +20,7 @@ class CustomElement extends HTMLElement {
     this.attachShadow({ mode: 'open' });
     this.shadowRoot.innerHTML = innerHTML;
   }
-  // DCDCAA - function
-  // DA70D6 - parens
-  // 6A9955 - comment
+
   connectedCallback() {
     // this.innerHTML = innerHTML;
   }
