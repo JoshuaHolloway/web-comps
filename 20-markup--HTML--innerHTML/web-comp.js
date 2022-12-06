@@ -1,13 +1,5 @@
 const innerHTML = `
-  <style>
-    .wc-btn {
-      background: lightgreen;
-      display: inline-block;
-      padding: 1rem;
-      cursor: pointer;
-    }
-  </style>
-  <div class="wc-btn">Custom Element</div>
+  <div>Custom Element</div>
 `;
 
 // ==============================================
@@ -17,14 +9,10 @@ class CustomElement extends HTMLElement {
 
   constructor() {
     super();
-
-    // Encapsulate CSS:
-    this.attachShadow({ mode: 'open' });
-    this.shadowRoot.innerHTML = innerHTML;
   }
 
   connectedCallback() {
-    // this.innerHTML = innerHTML;
+    this.innerHTML = innerHTML;
   }
 
 }
