@@ -7,7 +7,7 @@ const innerHTML = `
       cursor: pointer;
     }
   </style>
-  <div class="wc-btn">HTML Element</div>
+  <div class="wc-btn">Custom Element</div>
 `;
 
 // Step 1: Define
@@ -20,7 +20,9 @@ class CustomElement extends HTMLElement {
     this.attachShadow({ mode: 'open' });
     this.shadowRoot.innerHTML = innerHTML;
   }
-
+  // DCDCAA - function
+  // DA70D6 - parens
+  // 6A9955 - comment
   connectedCallback() {
     // this.innerHTML = innerHTML;
   }

@@ -1,0 +1,29 @@
+<html>
+<head>
+  <script src="./web-comp.js" type="module"></script>
+</head>
+<body>
+
+  <style>
+    .btn {
+      background: deepskyblue;
+      display: inline-block;
+      padding: 1rem;
+      cursor: pointer;
+    }
+
+    div {
+      border: dashed hotpink 5px;
+    }
+  </style>
+  <div class="btn">HTML Element</div>
+
+
+  <web-comp></web-comp>
+  <script>
+    const webComp = document.querySelector('web-comp');
+    webComp.addEventListener('click', () => alert('clicked!'));
+  </script>
+
+</body>
+</html>
