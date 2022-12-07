@@ -1,0 +1,14 @@
+// placing this in the root of the project should create a dedicated CSS folder right next to the .scss file so you can use it local in each web-component during development
+{
+  "files.exclude": {
+    // "**/*.css": true,
+    // "**/*.css.map": true,
+  },
+  "liveSassCompile.settings.formats": [ // override global settings.json
+    {
+      "format": "compressed",
+      "extensionName": ".css",
+      "savePath": "~/css"
+    }
+  ]
+}

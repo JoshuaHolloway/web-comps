@@ -19,7 +19,7 @@ class CustomElement extends HTMLElement {
       // this.shadowRoot.appendChild(link);
       this.appendChild(link);
     };
-    importCSS('./web-comp.css');
+    importCSS('./web-comp.css'); // NOTE: I think this path is relative to the file the custom element <web-comp> is actually used in!
 
     this.appendChild(div);
     // this.append(style, div);
