@@ -13,7 +13,10 @@ class CustomElement extends HTMLElement {
   }
 
   connectedCallback() {
-    this.innerHTML = template.innerHTML;
+    // https://stackoverflow.com/a/65006883
+    const content = template.content;
+    const cloned = content.cloneNode(true);
+    this.append(cloned);
   }
 
 }
