@@ -1,6 +1,6 @@
 const template = document.createElement('template');
 template.innerHTML = `
-  <div id="web-comp">Custom Element</div>
+  <div>Custom Element</div>
 `;
 
 // ==============================================

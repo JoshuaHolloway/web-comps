@@ -1,7 +1,4 @@
-const template = document.createElement('template');
-template.innerHTML = `
-  <div>Custom Element</div>
-`;
+import template from './template.js';
 
 // ==============================================
 
@@ -13,8 +10,9 @@ class CustomElement extends HTMLElement {
   }
 
   connectedCallback() {
-    // https://stackoverflow.com/a/65006883
-    this.innerHTML = template.innerHTML;
+    const content = template.content;
+    const cloned = content.cloneNode(true);
+    this.append(cloned);
   }
 
 }
